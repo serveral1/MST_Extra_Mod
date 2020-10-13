@@ -2,19 +2,7 @@
   {
     "type": "construction",
     "id": "constr_mst_door_frame",
-    "description": "Build Door",
-    "//": "Step 1: door frame",
-    "category": "CONSTRUCT",
-    "required_skills": [ [ "fabrication", 1 ] ],
-    "time": "60 m",
-    "qualities": [ [ { "id": "HAMMER", "level": 2 } ], [ { "id": "AXE", "level": 2 }, { "id": "SAW_W", "level": 1 } ] ],
-    "components": [ [ [ "2x4", 6 ] ], [ [ "nail", 12 ] ] ],
-    "pre_terrain": "t_window_empty",
-    "post_terrain": "t_door_frame"
-  },
-  {
-    "type": "construction",
-    "id": "constr_mst_door_frame_2",
+    "group": "build_door",
     "description": "Build Door",
     "//": "Step 1: door frame",
     "category": "CONSTRUCT",
@@ -31,10 +19,11 @@
   },
   {
     "type": "construction",
-    "id": "constr_mst_door_frame_3",
-    "description": "Build Door",
-    "//": "Step 1: door frame",
-    "category": "CONSTRUCT",
+    "id": "constr_mst_window_empty",
+    "group": "build_window",
+    "description": "Build Window",
+    "//": "Step 1: window frame",
+    "category": "WINDOWS",
     "required_skills": [ [ "fabrication", 2 ], [ "survival", 2 ] ],
     "time": "80 m",
     "qualities": [
@@ -48,21 +37,8 @@
   },
   {
     "type": "construction",
-    "id": "constr_mst_window_empty",
-    "description": "Build Window",
-    "//": "Step 1: window frame",
-    "category": "CONSTRUCT",
-    "required_skills": [ [ "fabrication", 3 ], [ "survival", 3 ] ],
-    "time": "90 m",
-    "qualities": [ [ { "id": "HAMMER", "level": 2 } ] ],
-    "components": [ [ [ "2x4", 15 ], [ "stick", 15 ], [ "log", 2 ] ], [ [ "adhesive", 2, "LIST" ] ] ],
-    "pre_special": "check_empty",
-    "post_terrain": "t_window_empty"
-  },
-  {
-    "type": "construction",
     "id": "constr_mst_beehive",
-    "description": "Build Beehive",
+    "group": "build_beehive",
     "//": "Hive lure includes classic of sweet water, or a few other substitutes.  Bee balm tea however is because we don't have lemongrass.",
     "category": "FURN",
     "required_skills": [ [ "survival", 2 ] ],
@@ -85,7 +61,7 @@
   {
     "type": "construction",
     "id": "constr_mst_cpurifier",
-    "description": "Build Charcoal Purifier",
+    "group": "build_cpurifier",
     "category": "FURN",
     "required_skills": [ [ "survival", 2 ] ],
     "time": "25 m",
@@ -101,7 +77,7 @@
   {
     "type": "construction",
     "id": "constr_mst_leather_curtain",
-    "description": "Build Leather Door Curtain",
+    "group": "build_door_curtain_leather",
     "//": "Door frame not required",
     "category": "CONSTRUCT",
     "required_skills": [ [ "tailor", 1 ] ],
@@ -120,7 +96,7 @@
   {
     "type": "construction",
     "id": "constr_mst_makeshift_sill_dirt",
-    "description": "Build Makeshift Still",
+    "group": "build_still_dirt",
     "category": "CONSTRUCT",
     "required_skills": [ [ "fabrication", 2 ], [ "survival", 2 ] ],
     "time": "30 m",
@@ -133,7 +109,7 @@
   {
     "type": "construction",
     "id": "constr_mst_makeshift_sill_sand",
-    "description": "Build Makeshift Still",
+    "group": "build_still_dirt",
     "category": "CONSTRUCT",
     "required_skills": [ [ "fabrication", 2 ], [ "survival", 2 ] ],
     "time": "30 m",
@@ -158,7 +134,7 @@
   {
     "type": "construction",
     "id": "constr_mst_pulley_lifter",
-    "description": "Build Pulley Lifter",
+    "group": "build_pulley_lifter",
     "category": "CONSTRUCT",
     "required_skills": [ [ "fabrication", 5 ], [ "mechanics", 2 ] ],
     "time": "60 m",
@@ -175,7 +151,7 @@
   {
     "type": "construction",
     "id": "constr_mst_wood_windbreak",
-    "description": "Build Wooden Windbreak",
+    "group": "build_wood_windbreak",
     "category": "CONSTRUCT",
     "required_skills": [ [ "fabrication", 0 ] ],
     "time": "50 m",
@@ -188,8 +164,8 @@
   {
     "type": "construction",
     "id": "constr_mst_tarp_leanto",
+    "group": "build_tarp_leanto",
     "skill": "survival",
-    "description": "Build Leather Tarp Lean-To",
     "category": "CONSTRUCT",
     "difficulty": 1,
     "time": "50 m",
@@ -202,7 +178,7 @@
   {
     "type": "construction",
     "id": "constr_mst_wood_stairs_up_half",
-    "description": "Build Wooden Staircase",
+    "group": "build_wooden_staircase",
     "//": "Step 1: stairs frame in an empty space",
     "category": "CONSTRUCT",
     "required_skills": [ [ "fabrication", 5 ], [ "survival", 5 ] ],
@@ -215,7 +191,7 @@
   {
     "type": "construction",
     "id": "constr_mst_wood_stairs_up",
-    "description": "Build Wooden Staircase",
+    "group": "build_wooden_staircase",
     "//": "Step 2: complete the half made stairs with timber framework",
     "category": "CONSTRUCT",
     "required_skills": [ [ "fabrication", 5 ], [ "survival", 5 ] ],
@@ -229,7 +205,7 @@
   {
     "type": "construction",
     "id": "constr_mst_wooden_platform_1",
-    "description": "Build Wooden Platform",
+    "group": "build_wooden_platform",
     "category": "CONSTRUCT",
     "required_skills": [ [ "fabrication", 2 ], [ "survival", 2 ] ],
     "time": "120 m",
@@ -242,7 +218,7 @@
   {
     "type": "construction",
     "id": "constr_mst_wooden_platform_2",
-    "description": "Build Wooden Platform",
+    "group": "build_wooden_platform",
     "category": "CONSTRUCT",
     "required_skills": [ [ "fabrication", 2 ], [ "survival", 2 ] ],
     "time": "100 m",
@@ -255,7 +231,7 @@
   {
     "type": "construction",
     "id": "constr_mst_wall_wattle_half_platform",
-    "description": "Build Wattle-and-Daub Wall",
+    "group": "build_wattle_and_daub_wall",
     "//": "Step 1: half of a wall on a wooden platform",
     "category": "CONSTRUCT",
     "required_skills": [ [ "fabrication", 3 ], [ "survival", 3 ] ],
@@ -274,7 +250,7 @@
   {
     "type": "construction",
     "id": "constr_mst_wall_half_platform",
-    "description": "Build Wood Wall",
+    "group": "build_wood_wall",
     "//": "frame wall on a wooden platform",
     "category": "CONSTRUCT",
     "required_skills": [ [ "fabrication", 2 ] ],
@@ -287,7 +263,7 @@
   {
     "type": "construction",
     "id": "constr_mst_wall_log_half_platform",
-    "description": "Build Log Wall",
+    "group": "build_log_wall",
     "//": "Step 1: half of a log wall on a wooden platform",
     "category": "CONSTRUCT",
     "required_skills": [ [ "fabrication", 3 ] ],
@@ -300,7 +276,7 @@
   {
     "type": "construction",
     "id": "constr_mst_floor_noroof_platform",
-    "description": "Build Wooden Floor",
+    "group": "build_wooden_floor",
     "//": "Makes an outside wooden paving, similar to what would be used in patios.",
     "category": "CONSTRUCT",
     "required_skills": [ [ "fabrication", 1 ] ],
