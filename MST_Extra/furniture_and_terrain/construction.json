@@ -121,6 +121,7 @@
   {
     "type": "construction",
     "id": "constr_forge_adobe",
+    "group": "place_forge",
     "description": "Build Adobe Forge",
     "category": "FURN",
     "required_skills": [ [ "fabrication", 5 ] ],
@@ -174,6 +175,86 @@
     "pre_note": "Can be deconstructed without tools.",
     "pre_flags": [ "DIGGABLE", "FLAT" ],
     "post_terrain": "t_tarptent_leather"
+  },
+  {
+    "type": "construction",
+    "id": "constr_mst_makeshift_rack",
+    "group": "build_makeshift_rack",
+    "category": "FURN",
+    "required_skills": [ [ "fabrication", 2 ], [ "survival", 2 ] ],
+    "time": "160 m",
+    "qualities": [
+      [ { "id": "HAMMER", "level": 2 } ],
+      [ { "id": "CUT", "level": 1 } ],
+      [ { "id": "AXE", "level": 2 }, { "id": "SAW_W", "level": 1 } ]
+    ],
+    "components": [ [ [ "2x4", 14 ], [ "stick", 14 ] ], [ [ "adhesive", 3, "LIST" ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_rack_wood_makeshift"
+  },
+  {
+    "type": "construction",
+    "id": "constr_mst_makeshift_counter",
+    "group": "build_makeshift_counter",
+    "category": "FURN",
+    "required_skills": [ [ "fabrication", 2 ], [ "survival", 2 ] ],
+    "time": "60 m",
+    "qualities": [
+      [ { "id": "HAMMER", "level": 2 } ],
+      [ { "id": "CUT", "level": 1 } ],
+      [ { "id": "AXE", "level": 2 }, { "id": "SAW_W", "level": 1 } ]
+    ],
+    "components": [ [ [ "2x4", 6 ], [ "stick", 6 ] ], [ [ "adhesive", 2, "LIST" ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_counter_makeshift"
+  },
+  {
+    "type": "construction",
+    "id": "constr_mst_makeshift_table",
+    "group": "build_makeshift_table",
+    "category": "FURN",
+    "required_skills": [ [ "fabrication", 2 ], [ "survival", 2 ] ],
+    "time": "60 m",
+    "qualities": [
+      [ { "id": "HAMMER", "level": 2 } ],
+      [ { "id": "CUT", "level": 1 } ],
+      [ { "id": "AXE", "level": 2 }, { "id": "SAW_W", "level": 1 } ]
+    ],
+    "components": [ [ [ "2x4", 6 ], [ "stick", 6 ] ], [ [ "adhesive", 2, "LIST" ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_table_makeshift"
+  },
+  {
+    "type": "construction",
+    "id": "constr_mst_makeshift_chair",
+    "group": "build_makeshift_chair",
+    "category": "FURN",
+    "required_skills": [ [ "fabrication", 3 ], [ "survival", 3 ] ],
+    "time": "60 m",
+    "qualities": [
+      [ { "id": "HAMMER", "level": 2 } ],
+      [ { "id": "CUT", "level": 1 } ],
+      [ { "id": "AXE", "level": 2 }, { "id": "SAW_W", "level": 1 } ]
+    ],
+    "components": [ [ [ "2x4", 4 ], [ "stick", 4 ] ], [ [ "adhesive", 1, "LIST" ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_chair_makeshift"
+  },
+  {
+    "type": "construction",
+    "id": "constr_mst_makeshift_bench",
+    "group": "build_makeshift_bench",
+    "category": "FURN",
+    "required_skills": [ [ "fabrication", 3 ], [ "survival", 3 ] ],
+    "time": "60 m",
+    "qualities": [
+      [ { "id": "HAMMER", "level": 2 } ],
+      [ { "id": "CUT", "level": 1 } ],
+      [ { "id": "AXE", "level": 2 }, { "id": "SAW_W", "level": 1 } ]
+    ],
+    "components": [ [ [ "2x4", 4 ], [ "stick", 4 ] ], [ [ "adhesive", 1, "LIST" ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_bench_makeshift"
   },
   {
     "type": "construction",
