@@ -1,23 +1,22 @@
 # MST_Extra_Mod
 
-A mod for Cataclysm: Dark Days Ahead, the official followup to the now-obsolete More Survival Tools mod formerly present in the repo. Adds assorted additional content and changes that improve quality of life when playing innawoods, adding various interesting ideas variously thought up or suggested to me.
+A mod for Cataclysm: Dark Days Ahead and Cataclysm: Bright Nights, the official followup to the now-obsolete More Survival Tools mod formerly present in the repo. Adds assorted additional content and changes that improve quality of life when playing innawoods, adding various interesting ideas variously thought up or suggested to me.
+
+If you are using Dark Days Ahead, place the included MST_Extra folder in your data/mods folder. If you are using the Bright Nights fork, use the MST_Extra_BN folder instead. In either case it is recommended that, if updating the mod, to delete the older version of the folder rather than just dumping the new one onto the old one.
 
 The following list of content is not only incomplete and unlikely to be out of date, it's also specifically only what MST Extra adds that was not originally present in More Survival Tools. All content that was part of the original MST at the time of its obsolescence is also now a part of this mod.
 
+In addition, there may be differences in content between the DDA version and the BN version due to various QoL and performance tweaks made to BN, some of which negates the need for some changes that may be present in the DDA version.
+
 Recipe Additions/Overrides for Existing Items:
 * Added the option of making waterskins using sealed stomachs. The idea is it isn't that complicated to add a strap to an already usable water container.
-* Added overrides for some of the most basic leather and fur recipes, allowing the use of cured pelts/hides. The idea is that rawhide is still usable for some limited applications.
+* Added overrides for some of the most basic leather and fur recipes, allowing the use of cured pelts/hides. The idea is that rawhide is still usable for some limited applications (not present in BN, as it's now in the game's recipe directly).
 * Added both an override and an alternative recipe for boat oars, changing the material demand and making it non-reversible. The alternative version allows use of cordage instead of nails, and cutting instead of hammering.
 * The `adhesive` crafting requirement has been overridden to allow pitch (see below) as an option. This does not yet make it an option for all recipes as not all have been converted to use the requirements system, but this should improve over time.
 * Added a recipe for carving a spile out of bone. Hand drill will still be required, and I might plan to add a flint drill in the future.
 * Use of pitch in the waterproofing crafting requirement.
-* A recipe for leaching saltpeter out of bird droppings.
-* Certain recipes have been made `BLIND_EASY`.
+* A recipe for leaching saltpeter out of bird droppings (not present in BN, as animal waste has been dummied out).
 * Overrides allowing bologna, dog food, and cat food to use meat scraps as an option.
-* Re-added a recipe for the stone spear. There, it's book-learn only and only works with sharp rocks or ceramic shards. It wasn't that difficult compared to removing the recipe entirely.
-
-Item Edits:
-* Set charcoal water purifier to count as a substitute for electronic water purifiers. The `use_action` works the same consistently, so why shouldn't they be used the same in recipes?
 
 New Clothing:
 * Pack baskets, allowing a basic storage item to be crafted without access to cloth or leather.

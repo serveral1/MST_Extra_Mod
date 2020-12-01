@@ -101,28 +101,6 @@
     }
   },
   {
-    "type": "furniture",
-    "id": "f_forge_adobe",
-    "name": "adobe forge",
-    "description": "Metalworking station made of adobe bricks, typically used in combination with an anvil. Works as a charcoal forge in crafting recipes.",
-    "symbol": "^",
-    "color": "light_red",
-    "move_cost_mod": -1,
-    "coverage": 40,
-    "required_str": -1,
-    "crafting_pseudo_item": "rock_forge_pseudo",
-    "flags": [ "SEALED", "CONTAINER", "NOITEM", "EASY_DECONSTRUCT", "MINEABLE" ],
-    "deconstruct": { "items": [ { "item": "adobe_brick", "count": 40 } ] },
-    "examine_action": "reload_furniture",
-    "bash": {
-      "str_min": 18,
-      "str_max": 50,
-      "sound": "crash!",
-      "sound_fail": "whump.",
-      "items": [ { "item": "adobe_brick", "count": [ 20, 30 ] } ]
-    }
-  },
-  {
     "id": "t_tarptent_leather",
     "type": "terrain",
     "name": "leather tarp lean-to",
