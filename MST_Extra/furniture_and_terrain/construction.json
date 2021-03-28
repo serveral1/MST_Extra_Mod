@@ -120,7 +120,6 @@
     "type": "construction",
     "id": "constr_forge_adobe",
     "group": "place_forge",
-    "description": "Build Adobe Forge",
     "category": "FURN",
     "required_skills": [ [ "fabrication", 5 ] ],
     "time": "120 m",
